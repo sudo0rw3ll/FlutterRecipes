@@ -70,8 +70,9 @@ class _MyAppState extends State<MyApp> {
       });
     } else {
       setState(() {
-        _favoritedMeals
-            .add(DUMMY_MEALS.firstWhere((element) => element.id == mealId));
+        _favoritedMeals.add(
+          DUMMY_MEALS.firstWhere((element) => element.id == mealId),
+        );
       });
     }
   }
